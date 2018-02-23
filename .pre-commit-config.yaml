@@ -1,0 +1,9 @@
+- repo: git@github.com:hootsuite/pre-commit-php.git
+  sha: master
+  hooks:
+  - id: php-lint
+  - id: php-cs
+    files: \.(php)$
+    args: [--standard=ruleset.xml -p -n]
+  - id: php-cbf
+    files: \.(php)$
