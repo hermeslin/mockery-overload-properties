@@ -15,7 +15,7 @@
     <testsuites>
         <testsuite name="Mockery Test Suite">
             <directory suffix="Test.php">./tests</directory>
-            <exclude>./tests/LegacyCodeFailTestA.php</exclude>
+            <exclude>./tests/LegacyCodeFailTest.php</exclude>
         </testsuite>
     </testsuites>
 </phpunit>

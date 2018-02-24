@@ -1,5 +1,5 @@
 <?php
-namespace MOP\UnitTest;
+namespace Mop\UnitTest;
 
 use PHPUnit\Framework\TestCase;
 use Mockery;

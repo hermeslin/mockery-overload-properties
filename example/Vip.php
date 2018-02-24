@@ -12,10 +12,12 @@ class Vip
         $user = new User($userId);
 
         if ($user->isVip) {
-            $bonus = $defaultBonus * 2;
+            $bonus = $defaultBonus * $user->rank + 55;
         }
         else {
             $bonus = $defaultBonus * 0.5 + $user->rank;
         }
+
+        return $bonus;
     }
 }

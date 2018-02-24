@@ -10,11 +10,15 @@ class User
      */
     public function __construct($id)
     {
+        // some global static function
+        $dbh = DB_INSTANCE::getCurrent();
+
         $sql = "
             SELECT id, isVip, rank
             FROM user
             WHERE id = :id
         ";
+
         $stm = $dbh->prepare($sql);
         $bind = $stm->bindValue(':id', $id, PDO::PARAM_INT);
         $stm->execute();

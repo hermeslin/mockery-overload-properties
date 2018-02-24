@@ -8,7 +8,8 @@
     },
     "autoload": {
         "psr-4": {
-            "MOP\\UnitTest\\": "tests"
+            "Mop\\": "src",
+            "Mop\\UnitTest\\": "tests"
         }
     }
 }
