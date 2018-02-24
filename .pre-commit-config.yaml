@@ -5,5 +5,5 @@
   - id: php-cs
     files: \.(php)$
     args: [--standard=ruleset.xml -p -n]
-  - id: php-cbf
+  - id: php-cs-fixer
     files: \.(php)$

@@ -22,13 +22,12 @@ class LegacyCodeSuccessTest extends TestCase
      */
     public function vipUserBonusShouldCorrect()
     {
-        $user = mop::mock(
-            '\User', $properties = [
+        $properties = [
             'id' => 1,
             'isVip' => true,
             'rank' => 3
-            ]
-        );
+        ];
+        $user = mop::mock('\User', $properties);
 
         // bounus should 355
         $bunus = 100 * 3 + 55;
@@ -44,13 +43,12 @@ class LegacyCodeSuccessTest extends TestCase
      */
     public function notVipUserBonusShouldCorrect()
     {
-        $user = mop::mock(
-            '\User', $properties = [
+        $properties = [
             'id' => 2,
             'isVip' => false,
             'rank' => 99
-            ]
-        );
+        ];
+        $user = mop::mock('\User', $properties);
 
         // bounus should be 149
         $bunus = 100 * 0.5 + 99;
