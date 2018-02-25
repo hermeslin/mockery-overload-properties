@@ -24,5 +24,6 @@
             "Mop\\": "src",
             "Mop\\UnitTest\\": "tests"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
